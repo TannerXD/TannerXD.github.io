@@ -10,9 +10,30 @@
 
 <head>
     <style>
-    img {
-      width: 100%;
-    }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 360px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+img {
+    width: 25%;
+    height: 25%;
+}
     </style>
 </head>
 
@@ -49,7 +70,33 @@
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
 
-<img src="pictures\DSC_0278.JPG" alt="Senna" style="width:128px;height:128px;">
+    <div class="gallery">
+        <a target="_blank" href="pictures\DSC_0278.JPG">
+          <img src="pictures\DSC_0278.JPG" alt="Senna">
+        </a>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="pictures\DSC_0279.JPG">
+          <img src="pictures\DSC_0279.JPG" alt="Senna">
+        </a>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="pictures\DSC_0287.JPG">
+          <img src="pictures\DSC_0287.JPG" alt="Gavin" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+
 
 </div>
 
