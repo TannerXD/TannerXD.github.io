@@ -11,7 +11,7 @@
  
  function saveIndex(){ var sfv=new Array();
  var fe=document.forms[0].elements;
- for(i=0,j=0;i<fe.length;i++){ alert(fe[i].type)
+ for(i=0,j=0;i<fe.length;i++){ 
  if(fe[i].type=='select-one' ){sfv[j]= fe[i].selectedIndex ;j++ }	}
  setCookie('formEindex',sfv,2)
  }
