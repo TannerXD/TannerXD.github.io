@@ -1,13 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
-
-  <h1>Template</h1>
-  
-  <p>This is a blank template for a web page.</p>
-  
-</body>
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ <html>
+ <head>
+ <title>Untitled</title>
+ <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+ <meta name="generator" content="Web Page Maker (unregistered version)">
+ 
+ 
+ <SCRIPT type="text/javascript" src="globalCookie.js"></SCRIPT>
+ <SCRIPT type="text/javascript">
+ 
+ function saveIndex(){ var sfv=new Array();
+ var fe=document.forms[0].elements;
+ for(i=0,j=0;i<fe.length;i++){ alert(fe[i].type)
+ if(fe[i].type=='select-one' ){sfv[j]= fe[i].selectedIndex ;j++ }	}
+ setCookie('formEindex',sfv,2)
+ }
+ 
+ function setFormSelects(){
+ if(getCookie('formEindex')){ var sfv=getCookie('formEindex');
+ sfv=sfv.split(',');
+ var fe=document.forms[0].elements;
+ for(i=0,j=0;i<fe.length;i++){if(fe[i].type=='select-one' ){fe[i].selectedIndex=sfv[j];j++}	}
+ }
+ }
+ 
+ </SCRIPT>
+ </head>
+ <body onload="setFormSelects()">
+ 
+ <form name="next" method="POST" action="testing.html" style="margin:0px">
+ <input name="address2" type="text" maxlength=18 style="position:absolute;width:117px;left:565px;top:403px;z-index:20">
+ <select onchange="saveIndex()" name="slot1" >
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ </select>
+ <select onchange="saveIndex()" name="port1">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select>
+ 
+ <select select onchange="saveIndex()" name="slot2" >
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ </select>
+ <select onchange="saveIndex()" name="port2">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select>
+ 
+ <input name="Next" type="submit" value="Next">
+ </form>
+ </html>
