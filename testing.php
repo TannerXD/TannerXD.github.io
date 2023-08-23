@@ -1,9 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
- <html>
- <head>
- <title>Dropdown Test</title>
- </head>
-
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Transitonal//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitonal.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>W3.CSS Template</title>
+</head>
 <body>
 
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post">
